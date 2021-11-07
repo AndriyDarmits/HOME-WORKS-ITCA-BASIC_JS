@@ -218,7 +218,7 @@ for(let i = 0; i < arr.length; i++){
 console.log(maxSum);
 
 
-*/
+
 
 
 // --------------------------прості числа
@@ -235,7 +235,7 @@ nextPrime:
 
 
 
-/*вивід онлайн користувачів*/
+//вивід онлайн користувачів
 let usersObj = {
     Alan: {
       online: false
@@ -248,23 +248,24 @@ let usersObj = {
     }
   }
 
-  
+
 
 function countOnline(usersObj) {
-    
+
    let count = 0;
   for (let user in usersObj){
       console.log(usersObj[user].online);
-    
+
     if(usersObj[user].online === true){
       count ++;
-      
+
     }
     console.log(count);
   }
-  
-  
+
+
   }
 
   countOnline(usersObj);
 
+*/

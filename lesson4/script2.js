@@ -19,22 +19,31 @@ do{
 }while(hundred < 100 || hundred === 0 || hundred === "undefined");
 
 
-
+*/
 //==========TASK3============= --------------------------(треба пофіксити)
+// Вивести числа фібоначчі до 100
 let fib = [];
 fib[0] = 1;
 fib[1] = 2;
+let i = 1;
+let temp;
+let max = +prompt("Введітть границю ряду Фібоначі", 0);
 
+do {
+    i++;
+    temp = fib[i - 2] + fib[i - 1];
+    if (temp <= max) {
+        fib[i] = temp;
 
-
-    for(let i = 2; i <= 10; i++){
-
-        fib[i] = fib[i - 2] + fib[i - 1];
-
-        if(fib[i] >=  100)break;
     }
+} while (temp < max);
 
-    console.log(fib);
+console.log(fib);
+
+//for (let i = 2; i <= 10; i++) {
+
+//fib[i] = fib[i - 2] + fib[i - 1];
 
 
-*/
+//}
+
